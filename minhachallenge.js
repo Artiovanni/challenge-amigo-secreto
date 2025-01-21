@@ -8,6 +8,7 @@ function adicionarAmigo(){
     } else {
         listaDeAmigos.push(amigo);
         console.log(listaDeAmigos);
+        exibirNomes();
         limparInput();
     };
 };
@@ -15,3 +16,12 @@ function adicionarAmigo(){
 function limparInput(){
     document.querySelector('input').value = '';
 };
+
+function exibirNomes(){
+    let lista = document.getElementById('listaAmigos');
+    lista.innerHTML = '';
+    for (let i = 0; i < listaDeAmigos.length; i++){
+        lista.innerHTML += `<li>${listaDeAmigos[i]}</li>`;
+    }
+};
+

@@ -1,9 +1,22 @@
 let listaDeAmigos = [];
 
 // Permite adicionar nomes de amigos em uma lista e exibi-los na tela
+function formatarNome(nome){
+    // remove espaços em branco no início e no final da string
+    nome = nome.trim();
+    // divide a string em palavras e modifica a primeira letra de cada palavra para maiúscula e o restante para minúscula
+    nome = nome.map(palavra => palavra.charAt(0).toUpperCase() + palavra.slice(1).toLowerCase());
+    // junta as palavras em uma única string
+    nome_formatado = nome.join(" ");
+    return nome_formatado;
+    
+};
+// adiciona um amigo à lista e exibe na tela
 function adicionarAmigo(){
     let amigo = document.querySelector('input').value;
-    amigo = amigo.trim();
+    // formata o nome do amigo
+    amigo = formatarNome(amigo);
+
     if (amigo === '' || amigo == null){
         alert('Por favor, insira um nome.');
     } else {

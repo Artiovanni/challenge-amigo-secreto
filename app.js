@@ -18,6 +18,8 @@ function adicionarAmigo(){
 
     if (amigo === '' || amigo == null){
         alert('Por favor, insira um nome.');
+    } else if (listaDeAmigos.includes(amigo)){
+        alert('Este nome já foi adicionado.');
     } else {
         listaDeAmigos.push(amigo);
         console.log(listaDeAmigos);
@@ -56,6 +58,6 @@ function sortearAmigo(){
         console.log(amigoSorteado)
         let resultado = document.getElementById('resultado');
         limparUl();
-        resultado.innerHTML = `O seu amigo secreto é: ${amigoSorteado}!`;
+        resultado.innerHTML = `O amigo secreto sorteado é: ${amigoSorteado}`;
     }
 }

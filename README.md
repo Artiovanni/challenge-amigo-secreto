@@ -41,6 +41,10 @@ Quando houver pelo menos dois amigos na lista, você pode sortear um amigo secre
 
 <img src="./assets/Resultado.png" alt="Adicionar Amigos" width="650">
 
+## Acesse o Projeto
+
+Você pode acessar o projeto através deste [link](https://artiovanni.github.io/challenge-amigo-secreto/).
+
 ## Como Usar
 
 1. Digite o nome de um amigo no campo de entrada.
